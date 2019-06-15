@@ -2,11 +2,11 @@
 <div class="booyah-box col-10 offset-1">
 	<h1>Add your favorite traveling spot</h1>
 	<%= simple_form_for @travel do |f| %>
-	    <p><%= f.input :fname %></p>
-	    <p><%= f.input :lname %></p>
+	    <p><%= f.input :fname, label: 'First Name' %></p>
+	    <p><%= f.input :lname, label: 'Last Name' %></p>
 	    <p><%= f.input :username %></p>
 	    <p><%= f.input :bio %></p>
-	    <p><%= f.input :location %></p>
+	    <p><%= f.input :locationName, label: 'Favorite Location Spot Name' %></p>
 	    <p><%= f.input :address %></p><br />
 	    <%= f.submit 'Create', class: 'btn btn-primary' %>
 	  <% end %>

@@ -15,7 +15,7 @@ class TravelsController < ApplicationController
 	private
 
 	def travel_params
-		params.require(:travel).permit(:location, :description, :address, :username, :fname, :lname, :bio)
+		params.require(:travel).permit(:locationName, :description, :address, :username, :fname, :lname, :bio)
 	end
 
 end
